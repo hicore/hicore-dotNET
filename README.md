@@ -1,2 +1,2 @@
 # hicore-dotNET
-Hicore clinet for .NET
+Hicore client for .NET
