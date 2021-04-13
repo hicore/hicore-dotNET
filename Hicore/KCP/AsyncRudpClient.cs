@@ -127,8 +127,7 @@ namespace Hicore.KCP
             {
                 server.EndConnect(result);
                 this.connected.Set();
-                OnConnected.Invoke();
-
+                OnConnected?.Invoke();
             }
             catch (SocketException)
             {
@@ -393,8 +392,6 @@ namespace Hicore.KCP
 
         public void ReceiverLoop()
         {
-            
-
             var state = new StateObject(this.listener);
 
             var recv = Recv(state.Buffer, 0, state.BufferSize);
