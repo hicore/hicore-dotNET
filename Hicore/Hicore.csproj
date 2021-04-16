@@ -2,6 +2,14 @@
 
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Title>Hicore-dotNet</Title>
+        <Authors>farzadi</Authors>
+        <PackageProjectUrl>https://github.com/hicore/hicore-dotNET</PackageProjectUrl>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <RepositoryUrl>https://github.com/hicore/hicore-dotNET.git</RepositoryUrl>
+        <PackageIconUrl>https://hicore.dev/appIcon.png</PackageIconUrl>
+        <RepositoryType>git</RepositoryType>
     </PropertyGroup>
 
     <ItemGroup>
