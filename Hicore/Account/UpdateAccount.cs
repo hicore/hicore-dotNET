@@ -8,8 +8,7 @@ namespace Hicore.Update
     {
         private HicoreSocket _socket;
 
-
-        private TimeZone curTimeZone;
+        private TimeZoneInfo curTimeZone;
         private TimeSpan currentOffset;
 
         private string updateEvent = "update"; // main event
@@ -34,8 +33,7 @@ namespace Hicore.Update
         {
             this._socket = socket;
 
-
-            curTimeZone = TimeZone.CurrentTimeZone;
+            curTimeZone = TimeZoneInfo.Local;
             currentOffset = curTimeZone.GetUtcOffset(DateTime.Now);
 
             _socket.On(updateUserProfileEvent, res =>

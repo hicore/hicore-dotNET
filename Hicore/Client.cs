@@ -5,7 +5,7 @@ using Hicore.Storage;
 using Hicore.Update;
 
 
-namespace Hicore.Authentications
+namespace Hicore
 {
     public class Client : IClient
     {
@@ -13,7 +13,7 @@ namespace Hicore.Authentications
         private Result result;
         private User user;
 
-        private TimeZone curTimeZone;
+        private TimeZoneInfo curTimeZone;
         private TimeSpan currentOffset;
 
         public ChildServer ChildServer;
@@ -48,9 +48,8 @@ namespace Hicore.Authentications
                 result = new Result();
                 user = new User();
 
-                curTimeZone = TimeZone.CurrentTimeZone;
+                curTimeZone = TimeZoneInfo.Local;
                 currentOffset = curTimeZone.GetUtcOffset(DateTime.Now);
-
 
                 MatchController = new MatchController(_socket);
                 UpdateAccount = new UpdateAccount(_socket);
