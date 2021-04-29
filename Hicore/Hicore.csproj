@@ -10,6 +10,7 @@
         <RepositoryUrl>https://github.com/hicore/hicore-dotNET.git</RepositoryUrl>
         <PackageIconUrl>https://hicore.dev/appIcon.png</PackageIconUrl>
         <RepositoryType>git</RepositoryType>
+        <PackageVersion>1.0.1</PackageVersion>
     </PropertyGroup>
 
     <ItemGroup>
