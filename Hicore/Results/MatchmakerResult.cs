@@ -1,6 +1,4 @@
-﻿
-
-namespace Hicore.Units
+﻿namespace Hicore.Results
 {
    public class MatchmakerResult
     {

@@ -1,9 +1,7 @@
 ﻿using System;
-using Hicore.Authentications;
-using Hicore.Logger;
+using Hicore.Results;
 
-
-namespace Hicore
+namespace Hicore.Account
 {
     interface IUpdateAccount
     {

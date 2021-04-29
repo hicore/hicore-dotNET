@@ -1,5 +1,5 @@
 ﻿
-namespace Hicore.Authentications
+namespace Hicore.Account
 {
 
     public class Profile

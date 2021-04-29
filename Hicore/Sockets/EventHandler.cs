@@ -1,6 +1,6 @@
 ﻿using Hicore.Arguments;
 
-namespace Hicore
+namespace Hicore.Sockets
 {
   public delegate void EventHandler(ResponseArgs args);
 }

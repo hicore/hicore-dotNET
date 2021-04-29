@@ -1,8 +1,8 @@
 ﻿using System;
-using Hicore.Authentications;
-using Hicore.Logger;
+using Hicore.Results;
+using Hicore.Sockets;
 
-namespace Hicore.Update
+namespace Hicore.Account
 {
     public class UpdateAccount : IUpdateAccount
     {

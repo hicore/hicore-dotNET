@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Hicore
+namespace Hicore.Sockets
 {
     public class UrlConverter
     {

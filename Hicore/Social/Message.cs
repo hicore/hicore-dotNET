@@ -1,5 +1,5 @@
 ﻿
-namespace Hicore
+namespace Hicore.Social
 {
     public class Message
     {

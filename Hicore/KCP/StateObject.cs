@@ -47,7 +47,7 @@ namespace Hicore.KCP
             }
         }
 
-        public Socket Listener
+        public System.Net.Sockets.Socket Listener
         {
             get
             {
