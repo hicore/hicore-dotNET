@@ -1,6 +1,6 @@
 ﻿using System;
-using Hicore.Logger;
-using Hicore.Authentications;
+using Hicore.Results;
+using Hicore.Sockets;
 
 namespace Hicore.Storage
 {

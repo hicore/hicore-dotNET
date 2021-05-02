@@ -1,9 +1,8 @@
 ﻿using System;
-using Hicore.Authentications;
-using Hicore.Logger;
-using Hicore.Units;
+using Hicore.Results;
+using Hicore.Sockets;
 
-namespace Hicore
+namespace Hicore.Match
 {
     public class MatchController
     {

@@ -10,13 +10,11 @@ using Hicore.Arguments;
 using Hicore.Parsers;
 
 
-namespace Hicore
+namespace Hicore.Sockets
 {
 
     public class HicoreSocket
     {
-
-
         public HicoreSocket(string uri, int port) : this(new Uri(uri), port) { }
 
         private const int ReceiveChunkSize = 1024;

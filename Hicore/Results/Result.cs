@@ -1,5 +1,5 @@
 ﻿
-namespace Hicore.Logger
+namespace Hicore.Results
 {
     public class Result
     {

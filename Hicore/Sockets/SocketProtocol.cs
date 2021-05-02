@@ -1,4 +1,4 @@
-﻿namespace Hicore
+﻿namespace Hicore.Sockets
 {
   public enum SocketProtocol
   {

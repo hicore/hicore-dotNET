@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using Hicore.Authentications;
-using Hicore.Logger;
-using Hicore.Units;
+using Hicore.Results;
+using Hicore.Sockets;
 
-namespace Hicore
+namespace Hicore.Match
 {
     public class Matchmacker
     {

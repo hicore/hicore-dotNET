@@ -18,7 +18,7 @@ namespace Hicore.KCP
     {
         //private const ushort Port = 0000;
 
-        private Socket listener;
+        private System.Net.Sockets.Socket listener;
         private bool close;
 
         private readonly ManualResetEvent connected = new ManualResetEvent(false);
@@ -64,7 +64,7 @@ namespace Hicore.KCP
 
             try
             {
-                this.listener = new Socket(endpoint.AddressFamily, SocketType.Dgram, ProtocolType.Udp);
+                this.listener = new System.Net.Sockets.Socket(endpoint.AddressFamily, SocketType.Dgram, ProtocolType.Udp);
                 this.listener.BeginConnect(endpoint, port, this.OnConnectCallback, this.listener);
                 //this.connected.WaitOne();
                 RemoteAddress = (IPEndPoint)this.listener.RemoteEndPoint;
@@ -121,7 +121,7 @@ namespace Hicore.KCP
 
         private void OnConnectCallback(IAsyncResult result)
         {
-            var server = (Socket)result.AsyncState;
+            var server = (System.Net.Sockets.Socket)result.AsyncState;
 
             try
             {
@@ -191,7 +191,7 @@ namespace Hicore.KCP
         {
             try
             {
-                var resceiver = (Socket)result.AsyncState;
+                var resceiver = (System.Net.Sockets.Socket)result.AsyncState;
 
                 resceiver.EndSend(result);
 
